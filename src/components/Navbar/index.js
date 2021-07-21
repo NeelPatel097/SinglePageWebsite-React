@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import { NavLink, NavbarContainer, NavLogo } from './NavbarElements';
 
 const Navbar = () => {
     return (
-        <div>
-            <h1>Nav</h1>
-        </div>
+        <>
+            <Nav>
+                <NavbarContainer>
+                    <NavLogo>KhetiLogo</NavLogo>
+                </NavbarContainer>
+            </Nav>
+        </>
     )
 }
 
