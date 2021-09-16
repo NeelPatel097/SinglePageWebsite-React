@@ -1,16 +1,17 @@
 import React from 'react';
-import { NavLink, NavbarContainer, NavLogo } from './NavbarElements';
+import { Nav, NavbarContainer, NavLogo } from './NavbarElements';
 
 const Navbar = () => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo>KhetiLogo</NavLogo>
+                    <NavLogo to='/' >Valuefintech</NavLogo>
+                    <h1>Hey</h1>
                 </NavbarContainer>
             </Nav>
         </>
-    )
-}
+    );
+};
 
 export default Navbar
