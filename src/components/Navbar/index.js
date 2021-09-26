@@ -1,5 +1,16 @@
 import React from 'react';
-import { Nav, NavbarContainer, NavLogo } from './NavbarElements';
+import {FaBars} from 'react-icons/fa'
+import { 
+    Nav,
+    NavbarContainer,
+    NavLogo,
+    MobileIcon,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    NavBtn,
+    NavBtnLink 
+     } from './NavbarElements';
 
 const Navbar = () => {
     return (
@@ -7,7 +18,29 @@ const Navbar = () => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/' >Valuefintech</NavLogo>
-                    <h1>Hey</h1>
+                    <MobileIcon>
+                        <FaBars/>
+                    </MobileIcon>
+                    <NavMenu>
+                        <NavItem>
+                            <NavLinks to='/'>Home</NavLinks>
+                        </NavItem>
+                        <NavItem>
+                            <NavLinks to='about'>About</NavLinks>
+                        </NavItem>
+                         <NavItem>
+                            <NavLinks to='solutions'>Solutions</NavLinks>
+                        </NavItem>
+                         <NavItem>
+                            <NavLinks to='founder'>Founder</NavLinks>
+                        </NavItem>
+                         <NavItem>
+                            <NavLinks to='career'>Career</NavLinks>
+                        </NavItem>
+                        <NavBtn>
+                            <NavBtnLink to='/contact'>Get in touch</NavBtnLink>
+                        </NavBtn>
+                    </NavMenu>
                 </NavbarContainer>
             </Nav>
         </>
